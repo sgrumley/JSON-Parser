@@ -1,0 +1,11 @@
+\NeedsTeXFormat{LaTeX2e}[2001/06/01]
+\ProvidesPackage{HaskellVerb}[2020/09/18 Andrew Rock]
+\RequirePackage{fancyvrb}
+\RequirePackage{color}
+\DefineVerbatimEnvironment{code}{Verbatim}{}
+\DefineVerbatimEnvironment{haddock}{Verbatim}{frame=leftline, rulecolor=\color{red}}
+\DefineVerbatimEnvironment{ebnf}{Verbatim}%
+   {frame=single, rulecolor=\color{cyan}}
+\newcommand{\HaskellInput}[1]{\VerbatimInput{#1}}
+\newcommand{\HaddockInput}[1]{\VerbatimInput[frame=leftline, rulecolor=\color{red}]{#1}}
+\newcommand{\EBNFInput}[1]{\VerbatimInput[frame=single, rulecolor=\color{cyan}]{#1}}
