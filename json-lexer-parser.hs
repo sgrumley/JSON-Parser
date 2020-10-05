@@ -1,21 +1,11 @@
--- https://stackoverflow.com/questions/24386664/construction-of-json-types-in-haskell
--- http://hackage.haskell.org/package/aeson-1.5.4.0/docs/src/Data.Aeson.Types.Internal.html#Value
---http://hackage.haskell.org/package/microaeson-0.1.0.0/docs/src/Data.Aeson.Micro.html#Value
---https://www.reddit.com/r/haskell/comments/iyuxcc/implement_haskell_data_types_for_json_data_is/
---http://book.realworldhaskell.org/read/writing-a-library-working-with-json-data.html
---https://github.com/noughtmare/uuagc/blob/mirage/uuagc/trunk/src/JSON.hs
-
---http://docshare02.docshare.tips/files/27095/270958091.pdf
-
-
 module Main (main) where
 
-import System.IO
-import Data.Char
-
+import System.Environment
 import ABR.Util.Pos
 import ABR.Parser
 import ABR.Parser.Lexers
+
+------------------------------------------------ Data ------------------------------------------------
 
 data JValue
     = JNumber Float
@@ -28,6 +18,7 @@ data JValue
 data JSON =  JValue JValue
                deriving Show
 
+------------------------------------------------ Lexers ------------------------------------------------
 
 -- Lexer for array type of symbols
 arrayL :: Lexer
@@ -48,6 +39,8 @@ repeatableL = literalL ',' %> "AnotherValue"
 programL :: Lexer
 programL = dropWhite $ nofail $ total $ listL 
     [whitespaceL, floatL, repeatableL, stringL, arrayL, objectL]
+
+------------------------------------------------ Parsers ------------------------------------------------
 
 -- Parse String
 jstringP :: Parser String
@@ -104,36 +97,33 @@ programP :: Parser JSON
 programP = nofail $ total (
     valueP @> JValue
    )
+------------------------------------------------ Driver ------------------------------------------------
 
--- Main
-main :: IO ()
+-- Run Parser from file
+main::IO()
 main = do
-   putStr "$ "
-   hFlush stdout
-   command <- getLine
-   let error :: Pos -> Msg -> IO ()
-       error (_,col) msg = do
-          putStrLn $ "Error: " ++ msg
-          putStrLn command
-          let col' = if col < 0
-                 then length command
-                 else col
-          putStrLn $ replicate col' ' '
-             ++ "^"
-          main
-       cps = preLex command
-   putStrLn $ "Pairs: " ++ show cps
-   case programL cps of
+    [f] <- getArgs
+    fileData <- readFile f
+    let error :: Pos -> Msg -> IO ()
+        error (_,col) msg = do
+            putStrLn $ "Error: " ++ msg
+            putStrLn fileData
+            let col' = if col < 0
+                then length fileData
+                else col
+            putStrLn $ replicate col' ' ' ++ "^"
+        cps = preLex fileData
+    putStrLn $ "Pairs: " ++ show cps
+    case programL cps of
       Error pos msg -> error pos msg
-      OK (tlps,_)      -> do
+      OK (tlps,_) -> do
          putStrLn $ "Lexemes: " ++ show tlps
          case programP tlps of
             Error pos msg -> error pos msg
-            OK (cmd,_)    -> do
-               putStrLn $ "Command : " 
-                  ++ show cmd
-               case cmd of
+            OK (fd,_) -> do
+               putStrLn $ "File Data : " ++ show fd
+               case fd of
                   JValue e -> do
-                     putStrLn $ "Result: "
-                        ++ show e
-                     main
+                     putStrLn $ "Result: " ++ show e
+
+
