@@ -1,2 +1,0 @@
-test ::= $letter$ {$letter$ | $digit$ | "_"};
-level="lexical".

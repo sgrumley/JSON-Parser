@@ -1,0 +1,228 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.10.5)  5 OCT 2020 03:31
+entering extended mode
+**./report.tex
+(report.tex
+LaTeX2e <2020-10-01>
+L3 programming layer <2020-09-24> xparse <2020-03-03>
+(/home/sgrumley/.miktex/texmfs/install/tex/latex/base/article.cls
+Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
+(/home/sgrumley/.miktex/texmfs/install/tex/latex/base/size10.clo
+File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+\c@part=\count175
+\c@section=\count176
+\c@subsection=\count177
+\c@subsubsection=\count178
+\c@paragraph=\count179
+\c@subparagraph=\count180
+\c@figure=\count181
+\c@table=\count182
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(/home/sgrumley/.miktex/texmfs/install/tex/latex/graphics/graphicx.sty
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/home/sgrumley/.miktex/texmfs/install/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(/home/sgrumley/.miktex/texmfs/install/tex/latex/graphics/graphics.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+
+(/home/sgrumley/.miktex/texmfs/install/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/home/sgrumley/.miktex/texmfs/install/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(/home/sgrumley/.miktex/texmfs/install/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/08/26 v1.2 Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen139
+\Gin@req@width=\dimen140
+)
+(FillAFour.sty
+Package: FillAFour 2004/04/06 Andrew Rock
+) (HaskellVerb.sty
+Package: HaskellVerb 2020/09/18 Andrew Rock
+
+(/home/sgrumley/.miktex/texmfs/install/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2020/05/03 v3.6 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count183
+\FV@InFile=\read2
+\FV@TabBox=\box47
+\c@FancyVerbLine=\count184
+\FV@StepNumber=\count185
+\FV@OutFile=\write3
+)
+(/home/sgrumley/.miktex/texmfs/install/tex/latex/graphics/color.sty
+Package: color 2020/02/24 v1.2b Standard LaTeX Color (DPC)
+
+(/home/sgrumley/.miktex/texmfs/install/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+))
+(/home/sgrumley/.miktex/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
+\l__kernel_color_stack_int=\count186
+\l__pdf_internal_box=\box48
+) (report.aux)
+\openout1 = `report.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+
+(/home/sgrumley/.miktex/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count187
+\scratchdimen=\dimen141
+\scratchbox=\box49
+\nofMPsegments=\count188
+\nofMParguments=\count189
+\everyMPshowfont=\toks16
+\MPscratchCnt=\count190
+\MPscratchDim=\dimen142
+\MPnumerator=\count191
+\makeMPintoPDFobject=\count192
+\everyMPtoPDFconversion=\toks17
+)
+(/home/sgrumley/.miktex/texmfs/install/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+) [1
+
+{/home/sgrumley/.miktex/texmfs/data/pdftex/config/pdftex.map}]
+
+pdfTeX warning: pdflatex (file ./syntax/json.pdf): PDF inclusion: found PDF ver
+sion <1.7>, but at most version <1.5> allowed
+<syntax/json.pdf, id=9, 238.8925pt x 49.18375pt>
+File: syntax/json.pdf Graphic file (type pdf)
+<use syntax/json.pdf>
+Package pdftex.def Info: syntax/json.pdf  used on input line 61.
+(pdftex.def)             Requested size: 215.00125pt x 44.26494pt.
+
+
+pdfTeX warning: pdflatex (file ./syntax/value.pdf): PDF inclusion: found PDF ve
+rsion <1.7>, but at most version <1.5> allowed
+<syntax/value.pdf, id=10, 84.315pt x 136.51pt>
+File: syntax/value.pdf Graphic file (type pdf)
+<use syntax/value.pdf>
+Package pdftex.def Info: syntax/value.pdf  used on input line 67.
+(pdftex.def)             Requested size: 75.88277pt x 122.85785pt.
+
+
+pdfTeX warning: pdflatex (file ./syntax/array.pdf): PDF inclusion: found PDF ve
+rsion <1.7>, but at most version <1.5> allowed
+<syntax/array.pdf, id=11, 160.6pt x 49.18375pt>
+File: syntax/array.pdf Graphic file (type pdf)
+<use syntax/array.pdf>
+Package pdftex.def Info: syntax/array.pdf  used on input line 73.
+(pdftex.def)             Requested size: 144.53865pt x 44.26494pt.
+
+
+pdfTeX warning: pdflatex (file ./syntax/number.pdf): PDF inclusion: found PDF v
+ersion <1.7>, but at most version <1.5> allowed
+<syntax/number.pdf, id=12, 513.92pt x 70.2625pt>
+File: syntax/number.pdf Graphic file (type pdf)
+<use syntax/number.pdf>
+Package pdftex.def Info: syntax/number.pdf  used on input line 80.
+(pdftex.def)             Requested size: 462.52371pt x 63.23564pt.
+
+Overfull \hbox (4.43417pt too wide) in paragraph at lines 80--82
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--82
+
+ []
+
+[1 <./syntax/json.pdf> <./syntax/value.pdf> <./syntax/array.pdf>]
+
+pdfTeX warning: pdflatex (file ./syntax/string.pdf): PDF inclusion: found PDF v
+ersion <1.7>, but at most version <1.5> allowed
+<syntax/string.pdf, id=44, 118.4425pt x 57.21375pt>
+File: syntax/string.pdf Graphic file (type pdf)
+<use syntax/string.pdf>
+Package pdftex.def Info: syntax/string.pdf  used on input line 87.
+(pdftex.def)             Requested size: 106.59724pt x 51.49188pt.
+
+
+pdfTeX warning: pdflatex (file ./syntax/bool.pdf): PDF inclusion: found PDF ver
+sion <1.7>, but at most version <1.5> allowed
+<syntax/bool.pdf, id=45, 78.2925pt x 52.195pt>
+File: syntax/bool.pdf Graphic file (type pdf)
+<use syntax/bool.pdf>
+Package pdftex.def Info: syntax/bool.pdf  used on input line 94.
+(pdftex.def)             Requested size: 70.46259pt x 46.97505pt.
+
+
+pdfTeX warning: pdflatex (file ./syntax/objectSymbols.pdf): PDF inclusion: foun
+d PDF version <1.7>, but at most version <1.5> allowed
+<syntax/objectSymbols.pdf, id=46, 80.3pt x 73.27374pt>
+File: syntax/objectSymbols.pdf Graphic file (type pdf)
+<use syntax/objectSymbols.pdf>
+Package pdftex.def Info: syntax/objectSymbols.pdf  used on input line 101.
+(pdftex.def)             Requested size: 72.26932pt x 65.94574pt.
+
+
+pdfTeX warning: pdflatex (file ./syntax/arraySymbols.pdf): PDF inclusion: found
+ PDF version <1.7>, but at most version <1.5> allowed
+<syntax/arraySymbols.pdf, id=47, 74.2775pt x 52.195pt>
+File: syntax/arraySymbols.pdf Graphic file (type pdf)
+<use syntax/arraySymbols.pdf>
+Package pdftex.def Info: syntax/arraySymbols.pdf  used on input line 108.
+(pdftex.def)             Requested size: 66.84912pt x 46.97505pt.
+
+
+pdfTeX warning: pdflatex (file ./syntax/repeatableSymbols.pdf): PDF inclusion: 
+found PDF version <1.7>, but at most version <1.5> allowed
+<syntax/repeatableSymbols.pdf, id=48, 104.39pt x 31.11626pt>
+File: syntax/repeatableSymbols.pdf Graphic file (type pdf)
+<use syntax/repeatableSymbols.pdf>
+Package pdftex.def Info: syntax/repeatableSymbols.pdf  used on input line 115.
+(pdftex.def)             Requested size: 93.9501pt x 28.00435pt.
+[2 <./syntax/number.pdf> <./syntax/string.pdf> <./syntax/bool.pdf> <./syntax/ob
+jectSymbols.pdf> <./syntax/arraySymbols.pdf>] (data.lhs) (lexers.lhs)
+(parsers.lhs [3 <./syntax/repeatableSymbols.pdf>]) [4] (report.aux) ) 
+Here is how much of TeX's memory you used:
+ 1702 strings out of 482190
+ 26690 string characters out of 2932741
+ 292042 words of memory out of 3000000
+ 18014 multiletter control sequences out of 15000+200000
+ 537678 words of font info for 38 fonts, out of 3000000 for 9000
+ 0 hyphenation exceptions out of 8191
+ 60i,5n,66p,185b,189s stack positions out of 5000i,500n,10000p,200000b,50000s
+ </home/sg
+rumley/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmbx12.pk> </home/s
+grumley/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmtt10.pk> </home/
+sgrumley/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmr10.pk> </home/
+sgrumley/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi720/cmbx12.pk> </home
+/sgrumley/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi720/cmr12.pk> </home
+/sgrumley/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi864/cmbx12.pk> </hom
+e/sgrumley/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi600/cmr17.pk> </hom
+e/sgrumley/.miktex/texmfs/data/fonts/pk/ljfour/public/cm/dpi1244/cmbx12.pk>
+Output written on report.pdf (5 pages, 139337 bytes).
+PDF statistics:
+ 376 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+

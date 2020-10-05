@@ -1,0 +1,2 @@
+arraySymbols ::= "[" | "]";
+level="lexical" .

@@ -1,0 +1,132 @@
+\documentclass[a4paper]{article}
+
+\usepackage{graphicx}
+
+\usepackage{FillAFour}
+\usepackage{HaskellVerb}
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+            
+        \Huge
+        \textbf{JSON Parser in Haskell}
+            
+        \vspace{0.5cm}
+        \LARGE
+        Assignment 2
+            
+        \vspace{1.5cm}
+            
+        \textbf{Sam Grumley}
+            
+        \vfill
+            
+        Programming Languages\\
+         3802ICT\\
+            
+        \vspace{0.8cm}
+            
+            
+        \Large
+         Griffith University\\
+         School of Information and Communication Technology\\
+         S5048240\\
+         5/10/2020
+            
+    \end{center}
+\end{titlepage}
+
+\section{Introduction}
+This report both documents and demonstrates the implementation of a JSON file parser writen in Haskell.
+The EBNF and syntax diagrams have been constructed by the program Syntrax. 
+The implementation is built around the third party module: ABR.
+
+\section{Instructions}
+Run the below commands in terminal to compile and parse your chosen JSON file
+\begin{code}
+ghc json-parser.hs 
+json-parser input.json
+\end{code}
+
+
+\section{JSON EBNF}
+EBNF and syntax diagrams:
+
+\subsection{JSON Object}
+\EBNFInput{syntax/json.ebnf}
+{\centering
+   \includegraphics[scale=0.9]{syntax/json}
+}
+
+\subsection{JSON Value}
+\EBNFInput{syntax/value.ebnf}
+{\centering
+   \includegraphics[scale=0.9]{syntax/value}
+}
+
+\subsection{JSON Array}
+\EBNFInput{syntax/array.ebnf}
+{\centering
+   \includegraphics[scale=0.9]{syntax/array}
+}
+
+\subsection{JSON Number}
+JNumber was not manually written as the ABR library handles number with the funcion floatL.
+\EBNFInput{syntax/number.ebnf}
+{\centering
+   \includegraphics[scale=0.9]{syntax/number}
+}
+
+\subsection{JSON String}
+JString was not manually written as the ABR library handles number with the funcion stringL.
+\EBNFInput{syntax/string.ebnf}
+{\centering
+   \includegraphics[scale=0.9]{syntax/string}
+}
+
+\subsection{JSON Bool}
+JString was not manually written as the ABR library handles number with the funcion stringL.
+\EBNFInput{syntax/bool.ebnf}
+{\centering
+   \includegraphics[scale=0.9]{syntax/bool}
+}
+
+\subsection{JSON Object Symbols}
+JString was not manually written as the ABR library handles number with the funcion stringL.
+\EBNFInput{syntax/objectSymbols.ebnf}
+{\centering
+   \includegraphics[scale=0.9]{syntax/objectSymbols}
+}
+
+\subsection{JSON Array Symbols}
+JString was not manually written as the ABR library handles number with the funcion stringL.
+\EBNFInput{syntax/arraySymbols.ebnf}
+{\centering
+   \includegraphics[scale=0.9]{syntax/arraySymbols}
+}
+
+\subsection{JSON Reapeatable Symbols}
+JString was not manually written as the ABR library handles number with the funcion stringL.
+\EBNFInput{syntax/repeatableSymbols.ebnf}
+{\centering
+   \includegraphics[scale=0.9]{syntax/repeatableSymbols}
+}
+
+
+
+\section{Implementation}
+
+\subsection{Data Structure}
+\input{data.lhs}
+
+\subsection{Lexers}
+\input{lexers.lhs}
+
+\subsection{Parser}
+\input{parsers.lhs}
+
+
+\end{document}
